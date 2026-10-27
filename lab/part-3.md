@@ -48,8 +48,8 @@ viewer, and a **1D sequence alignment** showing which residues were matched.
 {:start="5"}
 5. Rotate the superposition. Look at where the structures overlap and where they
    diverge.
-6. **Bookmark or copy the results URL** — it is shareable, and you will hand it
-   in.
+6. **Bookmark or copy the results URL.** It is shareable, and you can come
+   back to it later.
 
 > **Numbers look poor?** Before anything else, confirm the `6IFN` chain you
 > used is ~220 residues long. A ~126-residue chain is Csm2, not Csm3 — go back

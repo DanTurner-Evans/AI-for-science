@@ -53,8 +53,6 @@ best guesses.
 - Mean pLDDT for this model
 - Are there any low-confidence (yellow/orange) regions? Where are they —
   internal, or at the termini?
-- Does this predicted structure appear to have a protruding hairpin like the
-  thumb you identified in Part 1?
 
 </div>
 

@@ -52,7 +52,7 @@ layout: default
   {% assign next = steps[next_i] %}
   <a class="next" href="{{ next.url | relative_url }}"><span class="dir">Next: {{ next.label }}</span><span class="t">{{ next.title }}</span></a>
   {% else %}
-  <a class="next" href="{{ '/lab/' | relative_url }}#hand-in"><span class="dir">Finished</span><span class="t">What to hand in</span></a>
+  <a class="next" href="{{ '/lab/' | relative_url }}"><span class="dir">Finished</span><span class="t">Back to the lab overview</span></a>
   {% endif %}
 </nav>
 {% endif %}

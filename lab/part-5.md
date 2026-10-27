@@ -92,8 +92,3 @@ higher and was an ordinary, already-known CRISPR protein.
     divisions, and unnamed bacteria. Four of five are labelled "Uncharacterized."
     What does this say about where new biology is currently hiding, and about
     what made this kind of discovery possible only recently?
-
-## You're done
-
-Head back to the [lab overview]({{ '/lab/' | relative_url }}#hand-in) for what
-to hand in.
