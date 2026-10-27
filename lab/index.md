@@ -78,7 +78,7 @@ will otherwise trip you up in Part 1.
 
 <ol class="protocol" markdown="0">
 {% for step in site.data.lab %}
-  <li><a href="{{ step.url | relative_url }}"><span class="label">{{ step.label }}</span><span class="title">{{ step.title }}</span><span class="time">{{ step.time }}</span><span class="summary">{{ step.summary }}</span></a></li>
+  <li><a href="{{ step.url | relative_url }}"><span class="label">{{ step.label }}</span><span class="title">{{ step.title }}</span><span class="summary">{{ step.summary }}</span></a></li>
 {% endfor %}
 </ol>
 

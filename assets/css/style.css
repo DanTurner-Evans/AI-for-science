@@ -226,18 +226,16 @@ p { margin: 0 0 1rem; }
 .prose .protocol { list-style: none; padding: 0; margin: 1rem 0 1.5rem; border-top: 2px solid var(--ink); }
 .prose .protocol li { margin: 0; }
 .protocol a {
-  display: grid; grid-template-columns: 7.5rem 1fr auto; gap: 4px 16px; align-items: baseline;
+  display: grid; grid-template-columns: 7.5rem 1fr; gap: 4px 16px; align-items: baseline;
   padding: 14px 4px; border-bottom: 1px solid var(--rule); text-decoration: none; color: var(--ink);
 }
 .protocol a:hover { background: var(--tip-bg); }
 .protocol .label { font-weight: 700; color: var(--link); }
 .protocol .title { font-weight: 700; }
 .protocol .summary { grid-column: 2; color: var(--muted); font-size: .95rem; }
-.protocol .time { grid-row: 1; grid-column: 3; color: var(--muted); font-size: .9rem; white-space: nowrap; }
 @media (max-width: 560px) {
-  .protocol a { grid-template-columns: 1fr auto; }
+  .protocol a { grid-template-columns: 1fr; }
   .protocol .title, .protocol .summary { grid-column: 1 / -1; }
-  .protocol .time { grid-column: 2; }
 }
 
 /* Lab: previous / next */
