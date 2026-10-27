@@ -1,0 +1,32 @@
+# Lab pages, in order. Drives the landing-page cards, the step bar and the
+# previous/next links on each part.
+- url: /lab/background/
+  label: Background
+  title: The two proteins
+  time: Read first
+  summary: Cas7, the Csm complex, and why the PDB calls Cas7 "Csm3".
+- url: /lab/part-1/
+  label: Part 1
+  title: Pull up the CRISPR protein in the PDB
+  time: 15 min
+  summary: Find one Cas7 (Csm3) chain in the experimental structure 6IFN.
+- url: /lab/part-2/
+  label: Part 2
+  title: Look up the Vipr protein in AlphaFold
+  time: 20 min
+  summary: Inspect a predicted structure and read its confidence scores.
+- url: /lab/part-3/
+  label: Part 3
+  title: Compare the two structures
+  time: 20 min
+  summary: Run the structural alignment that made the discovery.
+- url: /lab/part-4/
+  label: Part 4
+  title: Interpret
+  time: 20 min
+  summary: Read the TM-score and ask what one alignment can and cannot show.
+- url: /lab/part-5/
+  label: Part 5
+  title: Now look up the Vipr structure in the PDB
+  time: 15 min
+  summary: Check the prediction against the cryo-EM structure solved afterward.

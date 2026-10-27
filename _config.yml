@@ -2,8 +2,8 @@ title: AI for Science
 description: Tech Labs 2026. How AI is changing scientific discovery, what can go wrong, and the policy questions it raises.
 baseurl: "/AI-for-science"
 url: "https://danturner-evans.github.io"
-slides_url: "https://www.figma.com/deck/Ggohs9z1pEW1xSFGRevFZH/Tech-Labs-2026---AI---Science?node-id=39-397&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
-slides_embed: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdeck%2FGgohs9z1pEW1xSFGRevFZH%2FTech-Labs-2026---AI---Science%3Fnode-id%3D39-397%26scaling%3Dmin-zoom%26content-scaling%3Dfixed%26page-id%3D0%253A1"
+slides_url: "https://www.figma.com/deck/Ggohs9z1pEW1xSFGRevFZH/Tech-Labs-2026---AI---Science"
+slides_embed: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdeck%2FGgohs9z1pEW1xSFGRevFZH%2FTech-Labs-2026---AI---Science"
 
 markdown: kramdown
 kramdown:
