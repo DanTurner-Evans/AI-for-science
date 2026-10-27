@@ -1,6 +1,7 @@
 ---
 layout: lab
 title: "Finding next gen CRISPR-like complexes"
+description: Using AlphaFold to find alternative CRISPR candidates.
 nav: lab
 ---
 
