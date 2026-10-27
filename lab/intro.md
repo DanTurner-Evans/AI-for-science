@@ -117,16 +117,3 @@ proposals, so far tested only in the lab.
 AlphaFold make this kind of search faster and cheaper. Who benefits when
 anyone can mine a database for the next gene-editing tool, and what new risks
 come with that?
-
-## Further reading
-
-- Jinek et al., ["A programmable dual-RNA–guided DNA endonuclease in adaptive
-  bacterial immunity,"](https://doi.org/10.1126/science.1225829) *Science*
-  **337**, 816–821 (2012) — Cas9 as a programmable tool
-- Charlesworth et al., ["Identification of preexisting adaptive immunity to Cas9
-  proteins in humans,"](https://doi.org/10.1038/s41591-018-0326-x) *Nature
-  Medicine* **25**, 249–254 (2019)
-- Altae-Tran et al., ["The widespread IS200/IS605 transposon family encodes
-  diverse programmable RNA-guided endonucleases,"](https://doi.org/10.1126/science.abj6856)
-  *Science* **374**, 57–65 (2021) — IscB and TnpB, the small ancestors of Cas9
-  and Cas12
