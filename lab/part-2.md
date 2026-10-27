@@ -47,15 +47,6 @@ best guesses.
    model is about the *relative position* of each pair of residues. Low error
    (dark) in a block means that whole region is reliably placed.
 
-<div class="record" markdown="1">
-
-**Record:**
-- Mean pLDDT for this model
-- Are there any low-confidence (yellow/orange) regions? Where are they —
-  internal, or at the termini?
-
-</div>
-
 > ### ⚠️ Model versions
 >
 > AFDB updates its models. The paper used **v4** (built 2022); the database now
