@@ -33,7 +33,12 @@ layout: default
 
 {{ content }}
 
-{% if current != nil %}
+{% if current == nil %}
+{% assign first = steps[0] %}
+<nav class="lab-pager" aria-label="Start the lab">
+  <a class="next" href="{{ first.url | relative_url }}"><span class="dir">Start here: {{ first.label }}</span><span class="t">{{ first.title }}</span></a>
+</nav>
+{% else %}
 {% assign prev_i = current | minus: 1 %}
 {% assign next_i = current | plus: 1 %}
 <nav class="lab-pager" aria-label="Previous and next">
