@@ -65,8 +65,4 @@ measure here.
 
 12. Everything you have done so far rests on a **prediction**. If the AlphaFold
     model were wrong in some important way, what would happen to the conclusion?
-    Before you continue, write down what you think would settle the matter.
-
-> **Write down your answer to question 12 before moving on.** Part 5 checks the
-> prediction against a measurement, and you will come back to this answer.
-{: .tip}
+    What evidence would settle the matter?

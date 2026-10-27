@@ -3,6 +3,7 @@ layout: default
 ---
 {% assign steps = site.data.lab %}
 {% assign current = nil %}
+{% assign parts = steps | where_exp: "s", "s.label contains 'Part'" %}
 {% for step in steps %}
   {% if step.url == page.url %}
     {% assign current = forloop.index0 %}
@@ -10,7 +11,7 @@ layout: default
 {% endfor %}
 
 <nav aria-label="Lab progress">
-  <ol class="lab-progress">
+  <ol class="lab-progress" style="grid-template-columns: repeat({{ steps.size | plus: 1 }}, 1fr)">
     <li class="{% if current == nil %}current{% else %}done{% endif %}"><a href="{{ '/lab/' | relative_url }}" data-short="Lab"{% if current == nil %} aria-current="page"{% endif %}>Overview</a></li>
     {% for step in steps %}
     {% assign state = "todo" %}
@@ -27,7 +28,7 @@ layout: default
 <h1>{{ page.title }}</h1>
 {% else %}
 {% assign step = steps[current] %}
-<p class="kicker">{% if step.kicker %}{{ step.kicker }}{% else %}{{ step.label }} of 5{% endif %}</p>
+<p class="kicker">{% if step.kicker %}{{ step.kicker }}{% else %}{{ step.label }} of {{ parts.size }}{% endif %}</p>
 <h1>{{ step.title }}</h1>
 {% endif %}
 

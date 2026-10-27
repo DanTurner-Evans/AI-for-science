@@ -207,7 +207,7 @@ p { margin: 0 0 1rem; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
 /* Lab: progress through the sequence of pages */
-.prose .lab-progress { list-style: none; padding: 0; margin: 0 0 2.5rem; display: grid; grid-template-columns: repeat(8, 1fr); gap: 4px; }
+.prose .lab-progress { list-style: none; padding: 0; margin: 0 0 2.5rem; display: grid; grid-auto-flow: column; gap: 4px; }
 .prose .lab-progress li { margin: 0; }
 .lab-progress a {
   display: block; padding-top: 10px; border-top: 5px solid var(--empty);

@@ -32,8 +32,3 @@
   short: "4"
   title: Interpret
   summary: Read the TM-score and ask what one alignment can and cannot show.
-- url: /lab/part-5/
-  label: Part 5
-  short: "5"
-  title: Now look up the VIPR structure in the PDB
-  summary: Check the prediction against the cryo-EM structure solved afterward.

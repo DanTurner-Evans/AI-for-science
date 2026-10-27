@@ -67,8 +67,7 @@ In this lab you will retrace that exact reasoning:
 1. Pull up a real, experimentally determined CRISPR protein structure
 2. Look up the predicted structure of a VIPR protein in AlphaFold
 3. Compare them — **this is the comparison that made the discovery**
-4. Then look up the VIPR structure that was solved experimentally *afterward*,
-   and find out whether the prediction was right
+4. Interpret what that comparison can and cannot tell you
 
 ## The lab, step by step
 
@@ -88,7 +87,7 @@ All free, all in the browser, no account needed:
 
 | Resource | Used in | What it is |
 |---|---|---|
-| [RCSB Protein Data Bank](https://www.rcsb.org) | Parts 1, 3, 5 | Archive of experimentally determined structures, with the Mol\* 3D viewer |
+| [RCSB Protein Data Bank](https://www.rcsb.org) | Parts 1, 3 | Archive of experimentally determined structures, with the Mol\* 3D viewer |
 | [AlphaFold Protein Structure Database](https://alphafold.ebi.ac.uk) | Part 2 | Pre-computed AlphaFold predictions for over 200 million proteins |
 | [RCSB Pairwise Structure Alignment](https://www.rcsb.org/alignment) | Parts 3, 4 | Aligns two structures and reports TM-score, RMSD and more |
 
@@ -112,9 +111,6 @@ All free, all in the browser, no account needed:
 - Yoon et al., ["A noncontiguous code for RNA-guided DNA recognition at the
   origin of CRISPR-Cas,"](https://doi.org/10.1126/science.aei0498) *Science*
   **393**, 1230–1235 (2026) — the discovery
-- Yoon et al., ["VIPR RNA-guided DNA recognition by noncontiguous geometric
-  triplex formation,"](https://doi.org/10.1126/science.aei3472) *Science*
-  **393**, 1236–1240 (2026) — the cryo-EM structures
 - Guo et al., "Structure Studies of the CRISPR-Csm Complex Reveal Mechanism of
   Co-transcriptional Interference," *Cell* **176** (2019) — `6IFN`
 - Varadi et al., "AlphaFold Protein Structure Database," *Nucleic Acids Res.*
