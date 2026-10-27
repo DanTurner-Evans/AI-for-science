@@ -5,7 +5,7 @@ nav: home
 
 <section class="hero">
 <h1>AI for Science</h1>
-<p class="lede">How AI is accelerating discovery, where it can cause harm, and what policymakers can do about it.</p>
+<p class="lede">How AI is accelerating discovery and where it can cause harm.</p>
 <p class="byline">A Tech Labs 2026 session with Dan Turner-Evans, PhD</p>
 <p class="actions"><a class="button" href="#slides">View the slides</a><a class="button secondary" href="{{ '/lab/' | relative_url }}">Start the lab</a></p>
 
