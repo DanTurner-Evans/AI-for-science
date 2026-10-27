@@ -28,9 +28,7 @@ the browser, needs no account, and can fetch AlphaFold models directly.
    the AlphaFold database by UniProt ID, so you do not have to download
    anything.
 
-3. Leave the alignment method on the default, **TM-align**. (jFATCAT rigid and
-   flexible, CE, CE-CP and Smith-Waterman 3D are also available — you will use
-   one of them in Part 4.)
+3. Leave the alignment method on the default, **TM-align**.
 4. Click **Compare**.
 
 The results page gives you two linked views: a **3D superposition** in the Mol\*

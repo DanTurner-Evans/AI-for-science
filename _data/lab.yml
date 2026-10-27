@@ -27,8 +27,3 @@
   short: "3"
   title: Compare the two structures
   summary: Run the structural alignment that made the discovery.
-- url: /lab/part-4/
-  label: Part 4
-  short: "4"
-  title: Interpret
-  summary: Read the TM-score and ask what one alignment can and cannot show.

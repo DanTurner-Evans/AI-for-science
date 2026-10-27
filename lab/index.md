@@ -67,7 +67,6 @@ In this lab you will retrace that exact reasoning:
 1. Pull up a real, experimentally determined CRISPR protein structure
 2. Look up the predicted structure of a VIPR protein in AlphaFold
 3. Compare them — **this is the comparison that made the discovery**
-4. Interpret what that comparison can and cannot tell you
 
 ## The lab, step by step
 
@@ -89,7 +88,7 @@ All free, all in the browser, no account needed:
 |---|---|---|
 | [RCSB Protein Data Bank](https://www.rcsb.org) | Parts 1, 3 | Archive of experimentally determined structures, with the Mol\* 3D viewer |
 | [AlphaFold Protein Structure Database](https://alphafold.ebi.ac.uk) | Part 2 | Pre-computed AlphaFold predictions for over 200 million proteins |
-| [RCSB Pairwise Structure Alignment](https://www.rcsb.org/alignment) | Parts 3, 4 | Aligns two structures and reports TM-score, RMSD and more |
+| [RCSB Pairwise Structure Alignment](https://www.rcsb.org/alignment) | Part 3 | Aligns two structures and reports TM-score, RMSD and more |
 
 
 ## If something goes wrong
