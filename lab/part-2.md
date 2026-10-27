@@ -54,16 +54,3 @@ best guesses.
 > did. Expect your numbers in Part 3 to be close to theirs but not identical —
 > and note that this is a normal, permanent feature of working with
 > computationally generated databases.
-
-> **Can't find it?** The UniProt entry for `X1U2U4` has been removed, so a
-> UniProt search will fail — but AFDB still serves the model. Use the direct
-> AFDB link above.
-{: .tip}
-
-## Questions
-
-1. A pLDDT of 94 means the model is confident. Does confident mean **correct**?
-   What is the difference?
-2. This model is a **single chain** with no RNA, no other proteins, no ligands.
-   What does AFDB structurally *not* tell you about this protein, no matter how
-   high the confidence?

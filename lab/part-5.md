@@ -44,8 +44,7 @@ check the prediction against a measurement.
 {:start="13"}
 13. The AlphaFold model was a **single chain**. The experimental structure is a
     **filament of many chains wrapped around an RNA**. Which features of VIPR
-    could only have been discovered experimentally? Go back to your answer to
-    question 2 and see how well you predicted this.
+    could only have been discovered experimentally?
 14. Did the prediction capture the fold well enough that the discovery would have
     worked? Given the confound above, what comparison *would* cleanly separate
     "AlphaFold was wrong" from "these are different proteins"?
