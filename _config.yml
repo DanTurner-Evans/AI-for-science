@@ -4,7 +4,6 @@ baseurl: "/AI-for-science"
 url: "https://danturner-evans.github.io"
 slides_url: "https://www.figma.com/deck/Ggohs9z1pEW1xSFGRevFZH/Tech-Labs-2026---AI---Science"
 slides_embed: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdeck%2FGgohs9z1pEW1xSFGRevFZH%2FTech-Labs-2026---AI---Science"
-slack_url: "https://join.slack.com/t/techlabsaifor-zp03887/shared_invite/zt-4edp23t47-8LQ0daWtyMUkk8n3wefuFg"
 
 markdown: kramdown
 kramdown:

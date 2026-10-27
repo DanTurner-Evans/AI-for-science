@@ -23,14 +23,6 @@ In this course, we will cover each of these aspects of AI-for-science, walk thro
 
 </section>
 
-<section class="slack" id="slack">
-<div>
-<h2>Join the course Slack</h2>
-<p>Everyone should sign up, ideally before the session. It's where to ask questions, share what you find in the lab, and keep the conversation going afterwards.</p>
-</div>
-<a class="button" href="{{ site.slack_url }}">Join the Slack</a>
-</section>
-
 <section class="home-section" id="slides">
 <h2>Slides</h2>
 <div class="embed">
