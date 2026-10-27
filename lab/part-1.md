@@ -16,13 +16,11 @@ permalink: /lab/part-1/
    appears several times** — those are the stacked backbone copies.
 5. We want **one Csm3 chain**, because Csm3 is Cas7. The published search used
    **author chain E**. See the warning below before you select it.
-6. Open the 3D viewer and display that chain on its own (use the chain selector
-   in the Mol\* viewer).
 
 > ### ⚠️ Two chain-numbering systems
 >
 > PDB entries can carry **two sets of chain IDs**, and `6IFN` is one where they
-> disagree. RCSB shows them as `D [E]` — the bare ID is the *entity* (label) ID,
+> disagree. RCSB shows them as `D [auth E]`: the first ID is the *label* ID,
 > the one in brackets is the *author* ID.
 >
 > | Protein | Entity chains | Author chains | Length |
@@ -39,17 +37,47 @@ permalink: /lab/part-1/
 >
 > Any of the three Csm3 copies works; the paper used author chain E.
 
-<div class="record" markdown="1">
+## Look at one Csm3 chain in 3D
 
-**Record:**
-- How many protein chains does `6IFN` contain in total? How many are Csm3?
-- Which chain ID did you use for Csm3, and under which numbering system?
-- **How long is your chain? It must be ~220 residues.** If it is ~126, you have
-  Csm2 — go back and reselect.
-- Looking at that chain alone, can you see a protruding hairpin that would reach
-  over an RNA? Sketch or screenshot it. This is the thumb.
+RCSB's 3D viewer is called **Mol\***. It runs in the browser; nothing to
+install.
 
-</div>
+1. **Open the viewer.** On the `6IFN` entry page, find the line **Explore in
+   3D** just below the structure image, and click **Structure**. (Or go
+   straight to <https://www.rcsb.org/3d-view/6IFN>.) The whole Csm complex
+   loads, with the guide RNA running through it.
+2. **Get your bearings.** Drag to rotate, scroll to zoom, and right-drag to
+   move the molecule. Hover over any part of the structure: the viewer names
+   what is under your cursor, including the chain ID and protein name. Hover
+   along the stacked backbone until you find a chain labelled Csm3.
+3. **Switch on selection mode.** Click the **Selection Mode** icon (an arrow
+   cursor) in the buttons at the top right of the viewer. A selection toolbar
+   appears along the top of the 3D view.
+4. **Select a whole chain.** In that toolbar, change the **Picking Level** from
+   *Residue* to *Chain*. Now click on your Csm3 chain. The whole chain turns
+   green. Wrong chain? Click on empty space to clear the selection and try
+   again.
+5. **Make it its own component.** In the selection toolbar, click **Create
+   Component of Selection** (hover over the icons to see their names) and
+   choose **Cartoon**. A new entry appears in the **Components** panel on the
+   right.
+6. **Hide everything else.** In the Components panel, click the **eye** icon
+   next to each of the other components (such as *Polymer* and *Ligand*) to
+   hide them. You should be left with a single protein chain.
+7. **Check it is the right chain.** Look at the sequence panel along the top of
+   the viewer, or hover over the two ends of the chain: the residue numbers
+   should run to about **220**. If they stop near 126, you have Csm2. Show the
+   other components again, clear the selection, and pick a different chain.
+8. **Find the thumb.** Rotate your single chain and look for a β-hairpin that
+   sticks out from the body of the protein, the kind of loop that would reach
+   over a bound RNA. That is the **thumb**. Take a screenshot: you will compare
+   it with the AlphaFold model in Part 2.
+
+> **The buttons look different?** Mol\* updates its interface from time to
+> time. Hovering over any icon shows its name, and the
+> [Mol\* viewer documentation](https://molstar.org/viewer-docs/) has pictures
+> of each panel.
+{: .tip}
 
 > **Why one chain and not the whole complex?** The published search used a single
 > Cas7/Csm3 protomer — `6ifnE` — as its query. The stacking is what builds the
