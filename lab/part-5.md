@@ -1,6 +1,6 @@
 ---
 layout: lab
-title: "Part 5: Now look up the Vipr structure in the PDB"
+title: "Part 5: Now look up the VIPR structure in the PDB"
 nav: lab
 permalink: /lab/part-5/
 ---
@@ -10,30 +10,30 @@ real VIPR complexes. That work was published as a companion paper. You can now
 check the prediction against a measurement.
 
 1. Go back to the **RCSB PDB** and search for **`35SF`**.
-   *(This is VIPR<sub>single</sub>: a Vipr filament bound to its vrRNA, by
+   *(This is VIPR<sub>single</sub>: a VIPR filament bound to its vrRNA, by
    cryo-EM at 2.9 Å.)*
 2. Look at what the entry contains. You should find **several identical protein
    chains plus one or more RNA chains**.
-3. Pick **one** Vipr protein chain and view it alone. (Make sure it is a protein
+3. Pick **one** VIPR protein chain and view it alone. (Make sure it is a protein
    chain, not an RNA chain.)
 4. Optionally, run one more alignment: your `6IFN` Csm3 chain against this
-   experimental Vipr chain, and compare the metrics to what you got in
+   experimental VIPR chain, and compare the metrics to what you got in
    [Part 3]({{ '/lab/part-3/' | relative_url }}).
 
 <div class="record" markdown="1">
 
 **Record:**
-- How many Vipr protein chains are in the entry? Which chains are RNA?
-- How does your single Vipr protomer compare, by eye, to the AlphaFold model
+- How many VIPR protein chains are in the entry? Which chains are RNA?
+- How does your single VIPR protomer compare, by eye, to the AlphaFold model
   from Part 2?
 
 </div>
 
 > ### ⚠️ Not the same protein
 >
-> `35SF` is the Vipr from **Escherichia phage SUSP1**. The AlphaFold model you
+> `35SF` is the VIPR protein from **Escherichia phage SUSP1**. The AlphaFold model you
 > used is `X1U2U4`, from a **marine sediment metagenome**. These are two
-> different Vipr proteins from two very different sources.
+> different VIPR proteins from two very different sources.
 >
 > So a difference between them is **not** necessarily prediction error — it may
 > simply be that they are different proteins. Keep that confound in mind when

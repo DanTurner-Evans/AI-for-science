@@ -44,8 +44,8 @@ measure here.
 ## The harder question
 
 {:start="11"}
-11. You have now shown that a CRISPR protein and a Vipr protein share a fold. The
-    paper claims something stronger: that **Vipr is ancestral to CRISPR
+11. You have now shown that a CRISPR protein and a VIPR protein share a fold. The
+    paper claims something stronger: that **VIPR is ancestral to CRISPR
     effectors** — that CRISPR came from something VIPR-like, not the other way
     around.
 
@@ -55,7 +55,7 @@ measure here.
     <details>
     <summary markdown="span">Discuss after attempting</summary>
 
-    What the authors actually did: built a phylogenetic tree of RAMPs and Vipr
+    What the authors actually did: built a phylogenetic tree of RAMPs and VIPR
     proteins rooted on an outgroup outside the family; showed VIPR systems are
     phage-encoded rather than host-encoded; showed VIPR loci lack CRISPR arrays
     and acquisition genes entirely; found VIPR systems across hundreds of

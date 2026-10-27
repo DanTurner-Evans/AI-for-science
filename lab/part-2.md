@@ -1,6 +1,6 @@
 ---
 layout: lab
-title: "Part 2: Look up the Vipr protein in AlphaFold"
+title: "Part 2: Look up the VIPR protein in AlphaFold"
 nav: lab
 permalink: /lab/part-2/
 ---

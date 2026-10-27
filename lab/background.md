@@ -5,7 +5,7 @@ nav: lab
 permalink: /lab/background/
 ---
 
-## Cas7 and Vipr
+## Cas7 and VIPR
 
 **Cas7** is a component of class 1 CRISPR-Cas systems — the most common CRISPR
 systems in nature. Cas7 proteins stack into a backbone that cradles the guide
@@ -15,7 +15,8 @@ proteins), defined by two features:
 - a **thumb** domain — a protruding β-hairpin that reaches over the bound RNA
 - a **glycine-rich loop (G-loop)** — a flexible loop contacting the RNA backbone
 
-**Vipr** is the protein component of VIPR systems. Multiple copies oligomerize
+**VIPR systems** are built around a single protein, the **VIPR protein**.
+Multiple copies oligomerize
 along a VIPR RNA (**vrRNA**) to form a helical filament that recognizes DNA.
 
 ## What is a Csm complex?
@@ -42,7 +43,7 @@ transcribed* — they recognize the RNA and then destroy the DNA it came from.
 
 **The part that matters for this lab is Csm3.** Multiple copies of one protein,
 stacked into a helical filament, each binding one piece of a guide RNA. Compare
-that to the description of Vipr above. The architecture is the thing you are
+that to the description of VIPR above. The architecture is the thing you are
 testing.
 
 ## A naming trap: Csm3 *is* Cas7

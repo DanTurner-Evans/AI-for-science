@@ -20,7 +20,7 @@
 - url: /lab/part-2/
   label: Part 2
   short: "2"
-  title: Look up the Vipr protein in AlphaFold
+  title: Look up the VIPR protein in AlphaFold
   summary: Inspect a predicted structure and read its confidence scores.
 - url: /lab/part-3/
   label: Part 3
@@ -35,5 +35,5 @@
 - url: /lab/part-5/
   label: Part 5
   short: "5"
-  title: Now look up the Vipr structure in the PDB
+  title: Now look up the VIPR structure in the PDB
   summary: Check the prediction against the cryo-EM structure solved afterward.
