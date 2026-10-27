@@ -19,10 +19,17 @@ the browser, needs no account, and can fetch AlphaFold models directly.
    | Structure 1 (reference) | PDB entry | `6IFN`, the **Csm3** chain from Part 1 |
    | Structure 2 | AlphaFold DB, by UniProt accession | `X1U2U4` |
 
-   The tool has an option to fetch predicted coordinates from the AlphaFold
-   database for a given UniProt ID — use it, so you do not have to download
-   anything. If the tool gives you a chain dropdown for `6IFN`, pick **Csm3** by
-   name; that sidesteps the numbering problem entirely.
+   **You must select the Csm3 chain for Structure 1.** `6IFN` contains the
+   whole Csm complex, so after you enter it the tool asks which chain to use.
+   Do not leave it on whatever it picks by default: open the chain menu and
+   choose a chain labelled **Csm3** (any of the three copies works). Check that
+   it is about **220 residues** long. If it is about 126, you have picked Csm2;
+   see the chain-numbering warning in
+   [Part 1]({{ '/lab/part-1/' | relative_url }}).
+
+   For Structure 2, use the tool's option to fetch predicted coordinates from
+   the AlphaFold database by UniProt ID, so you do not have to download
+   anything.
 
 3. Leave the alignment method on the default, **TM-align**. (jFATCAT rigid and
    flexible, CE, CE-CP and Smith-Waterman 3D are also available — you will use
