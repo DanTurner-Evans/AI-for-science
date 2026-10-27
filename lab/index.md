@@ -8,8 +8,6 @@ nav: lab
 
 **Using AlphaFold to find alternative CRISPR candidates**
 
-*Estimated time: 90 minutes. No programming or software installation — browser only.*
-
 {% assign conf = site.data.x1u2u4_plddt %}
 {% if conf %}
 <figure class="plddt">
