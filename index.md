@@ -55,7 +55,6 @@ In this course, we will cover each of these aspects of AI-for-science, walk thro
 
 <section class="lab-panel" id="lab">
 <h2>Lab: Finding next gen CRISPR-like complexes</h2>
-<p>Using AlphaFold to find alternative CRISPR candidates. Retrace a 2026 discovery: compare an experimental CRISPR protein to an AlphaFold prediction of an uncharacterized protein, then find out whether the prediction held up.</p>
-<p class="facts">90 minutes in your browser. Nothing to install, no account needed.</p>
+<p>Using AlphaFold to find alternative CRISPR candidates.</p>
 <a class="button" href="{{ '/lab/' | relative_url }}">Start the lab</a>
 </section>
