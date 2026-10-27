@@ -45,6 +45,8 @@ viewer, and a **1D sequence alignment** showing which residues were matched.
 | **Aligned residues** | | How many residues could be structurally matched |
 | **% identity** | | Sequence identity *within the structural alignment* |
 
+A **TM-score of 0.5 or higher** means the two proteins share the same fold.
+
 </div>
 
 {:start="5"}

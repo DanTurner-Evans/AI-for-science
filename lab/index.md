@@ -93,9 +93,6 @@ All free, all in the browser, no account needed:
 
 ## If something goes wrong
 
-- **Your alignment looks bad.** Check your `6IFN` chain before blaming the
-  software. It must be **Csm3, about 220 residues**. A ~126-residue chain is
-  Csm2, the wrong protein (see [Part 1]({{ '/lab/part-1/' | relative_url }})).
 - **A UniProt search for `X1U2U4` fails.** The UniProt entry has been removed,
   but AlphaFold still serves the model. Go straight to
   <https://alphafold.ebi.ac.uk/entry/X1U2U4>.
