@@ -22,10 +22,7 @@ the browser, needs no account, and can fetch AlphaFold models directly.
    **You must select the Csm3 chain for Structure 1.** `6IFN` contains the
    whole Csm complex, so after you enter it the tool asks which chain to use.
    Do not leave it on whatever it picks by default: open the chain menu and
-   choose a chain labelled **Csm3** (any of the three copies works). Check that
-   it is about **220 residues** long. If it is about 126, you have picked Csm2;
-   see the chain-numbering warning in
-   [Part 1]({{ '/lab/part-1/' | relative_url }}).
+   choose a chain labelled **Csm3** (any of the three copies works).
 
    For Structure 2, use the tool's option to fetch predicted coordinates from
    the AlphaFold database by UniProt ID, so you do not have to download
@@ -55,13 +52,6 @@ viewer, and a **1D sequence alignment** showing which residues were matched.
 {:start="5"}
 5. Rotate the superposition. Look at where the structures overlap and where they
    diverge.
-6. **Bookmark or copy the results URL.** It is shareable, and you can come
-   back to it later.
-
-> **Numbers look poor?** Before anything else, confirm the `6IFN` chain you
-> used is ~220 residues long. A ~126-residue chain is Csm2, not Csm3 — go back
-> to [Part 1]({{ '/lab/part-1/' | relative_url }}) and reselect.
-{: .tip}
 
 ## What the authors got
 
@@ -74,14 +64,3 @@ program (DALI):
 | RMSD | 3.8 Å |
 | Aligned length | 157 residues |
 | Target length | 178 residues |
-
-## Questions
-
-{:start="3"}
-3. Your **RMSD** and **aligned residues** should be in the same neighborhood as
-   the published values. Are they? They will not match exactly — TM-align and
-   DALI use different algorithms, and you are using model v6 rather than v4.
-4. You cannot reproduce the **Z-score** with this tool at all. Why not? (Hint: a
-   Z-score is a statistic about one specific program's score distribution.) What
-   does this tell you about quoting a single number from a paper as though it
-   were a property of the proteins?
