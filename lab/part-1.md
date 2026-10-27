@@ -64,14 +64,6 @@ install.
 6. **Hide everything else.** In the Components panel, click the **eye** icon
    next to each of the other components (such as *Polymer* and *Ligand*) to
    hide them. You should be left with a single protein chain.
-7. **Check it is the right chain.** Look at the sequence panel along the top of
-   the viewer, or hover over the two ends of the chain: the residue numbers
-   should run to about **220**. If they stop near 126, you have Csm2. Show the
-   other components again, clear the selection, and pick a different chain.
-8. **Find the thumb.** Rotate your single chain and look for a β-hairpin that
-   sticks out from the body of the protein, the kind of loop that would reach
-   over a bound RNA. That is the **thumb**. Take a screenshot: you will compare
-   it with the AlphaFold model in Part 2.
 
 > **The buttons look different?** Mol\* updates its interface from time to
 > time. Hovering over any icon shows its name, and the
