@@ -9,7 +9,7 @@ nav: lab
 **Using AlphaFold to find alternative CRISPR candidates**
 
 {% assign conf = site.data.x1u2u4_plddt %}
-{% if conf %}
+{% if conf %}VIPR
 <figure class="plddt">
 <div class="plddt-strip" markdown="0" role="img" aria-label="AlphaFold confidence for each of the {{ conf.residues.size }} residues of protein X1U2U4. Mean pLDDT {{ conf.mean }}; most residues are very high confidence.">{% for r in conf.residues %}<span class="r {{ r[2] }}" style="--i:{{ forloop.index0 }}" title="Residue {{ r[0] }}: pLDDT {{ r[1] }}"></span>{% endfor %}
 </div>
@@ -48,7 +48,7 @@ that the machinery bacteria use for adaptive immunity may have originated in
 warfare between viruses. They also suggest it could be engineered into new
 genome-editing tools.
 
-How do you make a claim like that? The Vipr protein and CRISPR proteins share
+How do you make a claim like that? The VIPR protein and CRISPR proteins share
 almost no recognizable sequence similarity. Standard tools for finding related
 proteins (BLAST, HMM searches) compare sequences, and they fail here.
 
@@ -57,17 +57,17 @@ proteins can descend from a common ancestor, retain the same fold, and share
 barely 10% of their amino acids. If you only look at sequence, you see nothing.
 If you look at shape, you see the relationship.
 
-There is a catch. When the authors made this discovery, **nobody had ever
-determined the structure of a Vipr protein.** No crystal, no cryo-EM map,
-nothing. So they used an **AlphaFold prediction** instead, and the entire claim
-rested, at first, on a computer's guess about a protein's shape.
+When the authors made this discovery, **nobody had ever determined the**
+**structure of a VIPR protein.**  So they used an **AlphaFold prediction** 
+instead, and the entire claim rested on an AI prediction about a protein's
+shape.
 
 In this lab you will retrace that exact reasoning:
 
 1. Pull up a real, experimentally determined CRISPR protein structure
-2. Look up the predicted structure of a Vipr protein in AlphaFold
+2. Look up the predicted structure of a VIPR protein in AlphaFold
 3. Compare them — **this is the comparison that made the discovery**
-4. Then look up the Vipr structure that was solved experimentally *afterward*,
+4. Then look up the VIPR structure that was solved experimentally *afterward*,
    and find out whether the prediction was right
 
 ## The lab, step by step
@@ -82,24 +82,6 @@ will otherwise trip you up in Part 1.
 {% endfor %}
 </ol>
 
-Keep a document open as you go. Each part has a **Record** list and numbered
-**Questions** (1–17, numbered continuously across parts); you will hand in your
-answers at the end.
-
-## Learning goals
-
-By the end of this lab you should be able to:
-
-1. Retrieve and inspect a macromolecular structure in the RCSB PDB
-2. Retrieve an AlphaFold prediction and read its per-residue confidence scores
-3. Explain why structural comparison detects homology that sequence comparison
-   misses
-4. Run a pairwise structural alignment in the browser
-5. Interpret a TM-score, RMSD, alignment length, and percent identity — and say
-   which of them matters for an evolutionary claim
-6. Articulate the difference between a predicted structure and a measured one,
-   and what each can and cannot establish
-
 ## What you'll use
 
 All free, all in the browser, no account needed:
@@ -110,14 +92,6 @@ All free, all in the browser, no account needed:
 | [AlphaFold Protein Structure Database](https://alphafold.ebi.ac.uk) | Part 2 | Pre-computed AlphaFold predictions for over 200 million proteins |
 | [RCSB Pairwise Structure Alignment](https://www.rcsb.org/alignment) | Parts 3, 4 | Aligns two structures and reports TM-score, RMSD and more |
 
-## What to hand in {#hand-in}
-
-1. Your completed metrics table from Part 3, plus the **shareable results URL**
-2. A screenshot of the Part 3 superposition, with the thumb and G-loop labelled
-   if you can identify them
-3. Written answers to questions 1–16
-4. Two or three sentences: **does the structural evidence convince you that VIPR
-   and CRISPR are related? What would change your mind?**
 
 ## If something goes wrong
 
