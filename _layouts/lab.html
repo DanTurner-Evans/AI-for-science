@@ -9,19 +9,25 @@ layout: default
   {% endif %}
 {% endfor %}
 
-<div class="lab-steps" role="navigation" aria-label="Lab sections">
-  <a href="{{ '/lab/' | relative_url }}"{% if current == nil %} aria-current="page"{% endif %}>Overview</a>
-  {% for step in steps %}
-  <a href="{{ step.url | relative_url }}"{% if forloop.index0 == current %} aria-current="page"{% endif %}>{{ step.label }}</a>
-  {% endfor %}
-</div>
+<nav aria-label="Lab progress">
+  <ol class="lab-progress">
+    <li class="{% if current == nil %}current{% else %}done{% endif %}"><a href="{{ '/lab/' | relative_url }}" data-short="Lab"{% if current == nil %} aria-current="page"{% endif %}>Overview</a></li>
+    {% for step in steps %}
+    {% assign state = "todo" %}
+    {% if current != nil %}
+      {% if forloop.index0 < current %}{% assign state = "done" %}{% elsif forloop.index0 == current %}{% assign state = "current" %}{% endif %}
+    {% endif %}
+    <li class="{{ state }}"><a href="{{ step.url | relative_url }}" data-short="{{ step.short }}"{% if state == "current" %} aria-current="page"{% endif %}>{{ step.label }}</a></li>
+    {% endfor %}
+  </ol>
+</nav>
 
 {% if current == nil %}
-<p class="eyebrow">In-class exercise</p>
+<p class="kicker">In-class exercise</p>
 <h1>{{ page.title }}</h1>
 {% else %}
 {% assign step = steps[current] %}
-<p class="eyebrow">VIPR lab · {{ step.label }}{% if step.time != "Read first" %} · {{ step.time }}{% endif %}</p>
+<p class="kicker">{% if step.kicker %}{{ step.kicker }}{% else %}{{ step.label }} of 5, about {{ step.time | replace: " min", " minutes" }}{% endif %}</p>
 <h1>{{ step.title }}</h1>
 {% endif %}
 
@@ -30,18 +36,18 @@ layout: default
 {% if current != nil %}
 {% assign prev_i = current | minus: 1 %}
 {% assign next_i = current | plus: 1 %}
-<div class="lab-pager">
+<nav class="lab-pager" aria-label="Previous and next">
   {% if prev_i >= 0 %}
   {% assign prev = steps[prev_i] %}
-  <a class="prev" href="{{ prev.url | relative_url }}"><span>← {{ prev.label }}</span>{{ prev.title }}</a>
+  <a class="prev" href="{{ prev.url | relative_url }}"><span class="dir">Previous: {{ prev.label }}</span><span class="t">{{ prev.title }}</span></a>
   {% else %}
-  <a class="prev" href="{{ '/lab/' | relative_url }}"><span>← Lab</span>Overview</a>
+  <a class="prev" href="{{ '/lab/' | relative_url }}"><span class="dir">Previous</span><span class="t">Lab overview</span></a>
   {% endif %}
   {% if next_i < steps.size %}
   {% assign next = steps[next_i] %}
-  <a class="next" href="{{ next.url | relative_url }}"><span>{{ next.label }} →</span>{{ next.title }}</a>
+  <a class="next" href="{{ next.url | relative_url }}"><span class="dir">Next: {{ next.label }}</span><span class="t">{{ next.title }}</span></a>
   {% else %}
-  <a class="next" href="{{ '/lab/' | relative_url }}#hand-in"><span>Finish →</span>What to hand in</a>
+  <a class="next" href="{{ '/lab/' | relative_url }}#hand-in"><span class="dir">Finished</span><span class="t">What to hand in</span></a>
   {% endif %}
-</div>
+</nav>
 {% endif %}

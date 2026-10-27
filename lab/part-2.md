@@ -47,12 +47,16 @@ best guesses.
    model is about the *relative position* of each pair of residues. Low error
    (dark) in a block means that whole region is reliably placed.
 
+<div class="record" markdown="1">
+
 **Record:**
 - Mean pLDDT for this model
 - Are there any low-confidence (yellow/orange) regions? Where are they —
   internal, or at the termini?
 - Does this predicted structure appear to have a protruding hairpin like the
   thumb you identified in Part 1?
+
+</div>
 
 > ### ⚠️ Model versions
 >
@@ -65,6 +69,7 @@ best guesses.
 > **Can't find it?** The UniProt entry for `X1U2U4` has been removed, so a
 > UniProt search will fail — but AFDB still serves the model. Use the direct
 > AFDB link above.
+{: .tip}
 
 ## Questions
 

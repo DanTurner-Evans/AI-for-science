@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ site.description }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Public+Sans:wght@400;600;700;750;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="brand" href="{{ '/' | relative_url }}">AI <span>for</span> Science</a>
-      <nav>
+      <a class="brand" href="{{ '/' | relative_url }}">AI for Science</a>
+      <nav class="site-nav" aria-label="Site">
         <a href="{{ '/' | relative_url }}#about"{% if page.nav == 'home' %} aria-current="page"{% endif %}>Overview</a>
         <a href="{{ '/' | relative_url }}#slides">Slides</a>
         <a href="{{ '/' | relative_url }}#readings">Readings</a>
@@ -28,7 +28,34 @@
   </main>
 
   <footer class="site-footer">
-    <div class="wrap">Tech Labs 2026 · AI for Science · Dan Turner-Evans</div>
+    <div class="wrap"><p>AI for Science, Tech Labs 2026. Taught by Dan Turner-Evans, PhD.</p></div>
   </footer>
+
+  <p class="sr-only" aria-live="polite" id="copy-status"></p>
+  <script>
+    // Turn PDB IDs (6IFN) and UniProt accessions (X1U2U4, A0A661D0E2) into
+    // copy buttons, so students can paste them straight into search boxes.
+    (function () {
+      var accession = /^(\d[A-Z0-9]{3}|[A-Z]\d[A-Z0-9]{3}\d|A0A[A-Z0-9]{7})$/;
+      var status = document.getElementById('copy-status');
+      document.querySelectorAll('.prose code').forEach(function (code) {
+        var text = code.textContent.trim();
+        if (!accession.test(text) || code.closest('a, pre') || !navigator.clipboard) return;
+        var button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'acc';
+        button.textContent = text;
+        button.title = 'Copy ' + text;
+        button.addEventListener('click', function () {
+          navigator.clipboard.writeText(text).then(function () {
+            button.dataset.copied = '';
+            status.textContent = 'Copied ' + text;
+            setTimeout(function () { delete button.dataset.copied; }, 1400);
+          });
+        });
+        code.replaceWith(button);
+      });
+    })();
+  </script>
 </body>
 </html>

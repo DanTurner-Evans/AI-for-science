@@ -69,3 +69,4 @@ measure here.
 
 > **Write down your answer to question 12 before moving on.** Part 5 checks the
 > prediction against a measurement, and you will come back to this answer.
+{: .tip}

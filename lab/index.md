@@ -1,23 +1,58 @@
 ---
 layout: lab
-title: "Lab: Is VIPR related to CRISPR?"
+title: "Finding next gen CRISPR-like complexes"
 nav: lab
 ---
 
-**Comparing a CRISPR protein to a Vipr protein using an AlphaFold prediction**
+<p class="paper">Based on <a href="https://doi.org/10.1126/science.aei0498">Yoon et al., "A noncontiguous code for RNA-guided DNA recognition at the origin of CRISPR-Cas," <em>Science</em> 393, 1230–1235 (2026)</a></p>
+
+**Using AlphaFold to find alternative CRISPR candidates**
 
 *Estimated time: 90 minutes. No programming or software installation — browser only.*
 
+{% assign conf = site.data.x1u2u4_plddt %}
+{% if conf %}
+<figure class="plddt">
+<div class="plddt-strip" markdown="0" role="img" aria-label="AlphaFold confidence for each of the {{ conf.residues.size }} residues of protein X1U2U4. Mean pLDDT {{ conf.mean }}; most residues are very high confidence.">{% for r in conf.residues %}<span class="r {{ r[2] }}" style="--i:{{ forloop.index0 }}" title="Residue {{ r[0] }}: pLDDT {{ r[1] }}"></span>{% endfor %}
+</div>
+<figcaption>
+<p>AlphaFold's confidence in each of the {{ conf.residues.size }} residues of X1U2U4, an uncharacterized protein from marine sediment that reopened the question of where CRISPR came from. You'll look it up in <a href="{{ '/lab/part-2/' | relative_url }}">Part 2</a>.</p>
+<ul class="legend">
+<li style="--c: var(--vhigh)">Very high</li>
+<li style="--c: var(--high)">Confident</li>
+<li style="--c: var(--low)">Low</li>
+<li style="--c: var(--vlow)">Very low</li>
+</ul>
+</figcaption>
+</figure>
+{% endif %}
+
 ## The question
 
-In 2026, a group at Berkeley reported a new kind of RNA-guided system called
-**VIPR** (Viral Interference Programmable Repeat), encoded by bacteriophages.
-They argued it is **ancestral to CRISPR-Cas** — that the machinery bacteria use
-for adaptive immunity may have originated in warfare between viruses.
+CRISPR gene editing has already reached patients: in 2023, Casgevy became the
+first approved CRISPR therapy, for sickle cell disease and β-thalassemia. But
+the Cas9 protein behind it is a bacterial immune protein, not a medicine. It is
+large and hard to package into the viruses used to deliver genes, many people
+already have immune responses to it, and it can only reach some parts of the
+genome. So researchers are hunting for **new CRISPR-like systems** that are
+smaller, less familiar to our immune systems, or able to do different jobs.
+(The [introduction]({{ '/lab/intro/' | relative_url }}) explains these limits
+in more detail.)
+
+Where do you look? Increasingly, in the millions of protein sequences pulled
+out of environmental DNA, most of which nobody has ever studied. The problem is
+recognizing a relative of CRISPR when you find one.
+
+In 2026, a group at Berkeley reported exactly that kind of find: a new
+RNA-guided system called **VIPR** (Viral Interference Programmable Repeat),
+encoded by bacteriophages. They argued it is **ancestral to CRISPR-Cas**, so
+that the machinery bacteria use for adaptive immunity may have originated in
+warfare between viruses. They also suggest it could be engineered into new
+genome-editing tools.
 
 How do you make a claim like that? The Vipr protein and CRISPR proteins share
 almost no recognizable sequence similarity. Standard tools for finding related
-proteins — BLAST, HMM searches — compare sequences, and they fail here.
+proteins (BLAST, HMM searches) compare sequences, and they fail here.
 
 But **protein structure is conserved long after sequence has diverged.** Two
 proteins can descend from a common ancestor, retain the same fold, and share
@@ -26,9 +61,8 @@ If you look at shape, you see the relationship.
 
 There is a catch. When the authors made this discovery, **nobody had ever
 determined the structure of a Vipr protein.** No crystal, no cryo-EM map,
-nothing. So they used an **AlphaFold prediction** instead — and the entire claim
-about the origin of CRISPR rested, at first, on a computer's guess about a
-protein's shape.
+nothing. So they used an **AlphaFold prediction** instead, and the entire claim
+rested, at first, on a computer's guess about a protein's shape.
 
 In this lab you will retrace that exact reasoning:
 
@@ -40,18 +74,15 @@ In this lab you will retrace that exact reasoning:
 
 ## The lab, step by step
 
-Work through the pages in order. Start with the background — it explains a
-naming trap that will otherwise trip you up in Part 1.
+Work through the pages in order. If CRISPR is new to you, start with the
+introduction. Don't skip the background page: it explains a naming trap that
+will otherwise trip you up in Part 1.
 
-<ul class="lab-parts" markdown="0">
+<ol class="protocol" markdown="0">
 {% for step in site.data.lab %}
-  <li><a href="{{ step.url | relative_url }}">
-    <span class="tag">{{ step.label }} · {{ step.time }}</span>
-    <span class="title">{{ step.title }}</span>
-    <span class="meta">{{ step.summary }}</span>
-  </a></li>
+  <li><a href="{{ step.url | relative_url }}"><span class="label">{{ step.label }}</span><span class="title">{{ step.title }}</span><span class="time">{{ step.time }}</span><span class="summary">{{ step.summary }}</span></a></li>
 {% endfor %}
-</ul>
+</ol>
 
 Keep a document open as you go. Each part has a **Record** list and numbered
 **Questions** (1–17, numbered continuously across parts); you will hand in your
@@ -106,10 +137,12 @@ All free, all in the browser, no account needed:
 
 ## Sources
 
-- Yoon et al., "A noncontiguous code for RNA-guided DNA recognition at the
-  origin of CRISPR-Cas," *Science* **393**, 1230–1235 (2026) — the discovery
-- Yoon et al., "VIPR RNA-guided DNA recognition by noncontiguous geometric
-  triplex formation," *Science* **393**, 1236 (2026) — the cryo-EM structures
+- Yoon et al., ["A noncontiguous code for RNA-guided DNA recognition at the
+  origin of CRISPR-Cas,"](https://doi.org/10.1126/science.aei0498) *Science*
+  **393**, 1230–1235 (2026) — the discovery
+- Yoon et al., ["VIPR RNA-guided DNA recognition by noncontiguous geometric
+  triplex formation,"](https://doi.org/10.1126/science.aei3472) *Science*
+  **393**, 1236–1240 (2026) — the cryo-EM structures
 - Guo et al., "Structure Studies of the CRISPR-Csm Complex Reveal Mechanism of
   Co-transcriptional Interference," *Cell* **176** (2019) — `6IFN`
 - Varadi et al., "AlphaFold Protein Structure Database," *Nucleic Acids Res.*

@@ -32,6 +32,8 @@ the browser, needs no account, and can fetch AlphaFold models directly.
 The results page gives you two linked views: a **3D superposition** in the Mol\*
 viewer, and a **1D sequence alignment** showing which residues were matched.
 
+<div class="record" markdown="1">
+
 **Record all four numbers:**
 
 | Metric | Your value | What it means |
@@ -40,6 +42,8 @@ viewer, and a **1D sequence alignment** showing which residues were matched.
 | **RMSD** | | Average distance (Å) between matched residues after superposition |
 | **Aligned residues** | | How many residues could be structurally matched |
 | **% identity** | | Sequence identity *within the structural alignment* |
+
+</div>
 
 {:start="5"}
 5. Rotate the superposition. Look at where the structures overlap and where they
@@ -50,6 +54,7 @@ viewer, and a **1D sequence alignment** showing which residues were matched.
 > **Numbers look poor?** Before anything else, confirm the `6IFN` chain you
 > used is ~220 residues long. A ~126-residue chain is Csm2, not Csm3 — go back
 > to [Part 1]({{ '/lab/part-1/' | relative_url }}) and reselect.
+{: .tip}
 
 ## What the authors got
 

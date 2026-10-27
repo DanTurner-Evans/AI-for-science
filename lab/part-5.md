@@ -20,10 +20,14 @@ check the prediction against a measurement.
    experimental Vipr chain, and compare the metrics to what you got in
    [Part 3]({{ '/lab/part-3/' | relative_url }}).
 
+<div class="record" markdown="1">
+
 **Record:**
 - How many Vipr protein chains are in the entry? Which chains are RNA?
 - How does your single Vipr protomer compare, by eye, to the AlphaFold model
   from Part 2?
+
+</div>
 
 > ### ⚠️ Not the same protein
 >

@@ -39,6 +39,8 @@ permalink: /lab/part-1/
 >
 > Any of the three Csm3 copies works; the paper used author chain E.
 
+<div class="record" markdown="1">
+
 **Record:**
 - How many protein chains does `6IFN` contain in total? How many are Csm3?
 - Which chain ID did you use for Csm3, and under which numbering system?
@@ -47,9 +49,12 @@ permalink: /lab/part-1/
 - Looking at that chain alone, can you see a protruding hairpin that would reach
   over an RNA? Sketch or screenshot it. This is the thumb.
 
+</div>
+
 > **Why one chain and not the whole complex?** The published search used a single
 > Cas7/Csm3 protomer — `6ifnE` — as its query. The stacking is what builds the
 > backbone, but one protomer carries the fold we are comparing.
+{: .tip}
 
 **This structure is a measurement.** Someone grew crystals, shot X-rays at them,
 and solved the phases. Keep that in mind, because the next structure is not.
