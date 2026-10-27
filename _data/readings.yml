@@ -1,0 +1,32 @@
+- topic: AI agents in science
+  title: AI for science needs reasoning, not just data
+  url: https://www.technologyreview.com/2026/08/10/1141384/ai-agents-for-science/
+  authors: Eric Schmidt and Suhas Mahesh
+  source: MIT Technology Review
+
+- topic: How AI will disrupt the scientific profession
+  title: Mass-produced science is coming. What happens to scientists?
+  url: https://www.thetransmitter.org/artificial-intelligence/mass-produced-science-is-coming-what-happens-to-scientists/
+  authors: Kenneth Harris
+  source: University College London
+
+- topic: AI agents in science
+  title: "Conjecture Machines: AI agents and the new validation bottleneck in science"
+  url: https://deepmind.google/public-policy/conjecture-machines-ai-agents-and-the-new-validation-bottleneck-in-science/
+  authors: Don Wallace, Conor Griffin, Sean O’Neill, Thang Luong, Owen Larter
+  source: Google DeepMind
+  optional: true
+
+- topic: New AI models for science
+  title: "Beyond AlphaFold: How to target investments to develop new AI models that can uncover natural laws"
+  url: https://ifp.org/nlm/
+  authors: Dan Turner-Evans
+  source: IFP
+  optional: true
+
+- topic: Lab robotics
+  title: Heuristics for lab robotics, and where its future may go
+  url: https://www.owlposting.com/p/heuristics-for-lab-robotics-and-where
+  authors: Abhishaike Mahajan
+  source: OpenAI Foundation
+  optional: true

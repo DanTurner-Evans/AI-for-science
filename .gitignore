@@ -1,0 +1,5 @@
+_site/
+.jekyll-cache/
+.DS_Store
+# Contains the instructor answer key; keep it out of the public repo
+exercise-cas7-vipr-alignment.md
